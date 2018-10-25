@@ -1,0 +1,246 @@
+<!-- <div class="reportslisting">
+<div class="row">
+<div class="col-md-4 mt-4" *ngFor="let report of reports">
+
+
+<a href="viewreport/{{report._id}}" class="card btn btn-outline-info" style="width: 18rem;">
+<img class="card-img-top cardImg" src="{{report.imgUrl}}" alt="Card image cap">
+<div class="card-body">
+<h5 class="card-title">{{report.title}}</h5>
+</div>
+</a>
+
+</div>
+</div>
+</div> -->
+
+<div id="marketInsights">
+
+  <!--Landing page image-->
+  <div class="mi-home-inner">
+
+    <!--background-image-->
+
+  </div>
+
+
+  <!--MI HOME Landing page caption-->
+
+  <div class="mi-home-caption center-block text-center">
+    <h3>MARKET INSIGHTS</h3>
+
+  </div>
+
+
+
+  <!--Search box-->
+  <div class="row justify-content-md-center px-5" id="searchdiv">
+
+    <div class="col-lg-4 col-md-4 col-sm6">
+
+      <div class="input-group" id="search-bar">
+
+        <input type="text" class="form-control" placeholder="Search Reports...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" id="mi-search-button" type="submit"> GO </button>
+        </span>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!--BROWSE INDUSTRIES SECTION-->
+  <div class="container-fluid text-center" id="mi-home-industries">
+
+    <div class="row">
+
+      <div class="col-lg-1 col-md-2 col-sm-6  col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/finance.png" alt="">
+        <h5>Financial Services</h5>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6  col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/healthcare.png" alt="">
+        <h5>Healthcare</h5>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6  col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/paper-plane.png" alt="">
+        <h5>Aerospace and Defence</h5>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6  col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/steering-wheel.png" alt="">
+        <h5>Automotive</h5>
+
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/chemicals.png" alt="">
+        <h5>Chemicals</h5>
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/ict.png" alt="">
+        <h5>Information and Communications Technology</h5>
+
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/power&mining.png" alt="">
+        <h5>Power and Mining</h5>
+
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/oil&gas.png" alt="">
+        <h5>Oil and Gas</h5>
+
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/industrial_manufacturing.png" alt="">
+        <h5>Industrial Manufacturing</h5>
+
+      </div>
+
+      <div class="col-lg-1 col-md-2 col-sm-6 col-xs-6 mx-auto my-2">
+        <img class="img-responsive" src="{{smalIconPath}}/telecom.png" alt="">
+        <h5>Telecom</h5>
+
+      </div>
+    </div>
+  </div><!--End of Browse Industries section-->
+
+
+
+
+  <!--INDUSTRIES SIDE-BAR & REPORTS GRID-->
+
+  <div class="container-fluid text-center d-none d-lg-block">
+
+    <h4 id="reports-grid-title">BROWSE REPORTS</h4>
+
+    <div class="row">
+
+      <!--INDUSTRIES SIDE-BAR-->
+      <div class="col col-lg-3 text-left" id="industries-sidebar">
+
+        <h5>Explore Categories</h5>
+
+
+        <!--Start of Sector accordion 1 -->
+        <div class="sector list-group" *ngFor="let category of reportsCategories;let i = index" id="sector-{{i}}-accordion">
+
+          <a class="list-group-item" data-toggle="collapse" data-target="#collapse-{{i}}">
+            {{category.category}}<span class="fa fa-chevron-right"></span>
+          </a>
+
+          <div class="sub-menu collapse hide" id="collapse-{{i}}" data-parent="#sector-0-accordion">
+
+            <a href="#" *ngFor="let subCategory of category.sub" class="list-group-item">{{subCategory}}</a>
+
+
+          </div>
+
+        </div><!--End of Sector accordion 1-->
+
+
+
+        <!--Start of Sector accordion 2 -->
+
+      </div>  <!--End of sidebar col-->
+
+
+
+      <!--COL CONTAINER OF REPORTS GRID-->
+      <div class="col lg-9" id="reports-conatainer-col">
+
+
+        <!--FIRST ROW OF REPORTS GRID-->
+        <div class="row">
+
+
+
+
+
+          <!--items start-->
+          <div class="report-col col-lg-4" *ngFor="let report of reports">
+
+
+            <div class="item active center-block text-center mx-auto"><!--item1 start-->
+
+              <div class="card"><!--card start-->
+
+                <img class="card-img-top img-responsive" src="{{report.imgUrl}}" alt="Card image cap AI in Fintech">
+
+                <div class="card-body">
+                  <h5 class="card-title">{{report.title}}</h5>
+                  <p class="card-text"><small class="muted">Global Market Size, Share, Trends, Forecasts and Startup Profiles.</small></p>
+                  <a href="viewreport/{{report._id}}" class="btn btn-default">View Report</a>
+
+                </div>
+
+              </div><!--card end-->
+
+            </div>
+
+          </div> <!--items end-->
+
+          <accordion>
+  <accordion-group heading="Static Header, initially expanded">
+    <a href="viewreport/{{report._id}}" class="btn btn-default">View Report</a>
+      <a href="viewreport/{{report._id}}" class="btn btn-default">View Report</a>
+        <a href="viewreport/{{report._id}}" class="btn btn-default">View Report</a>
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+  <accordion-group heading="Another group">
+    <p>Some content</p>
+  </accordion-group>
+</accordion>
+        </div><!--First Row of Reports Grid End-->
+
+
+
+
+        <!--Second ROW OF REPORTS GRID-->
+
+
+      </div><!--COL CONTAINER OF REPORTS GRID-->
+
+
+      <!--QUERY-BOX START-->
+      <div class="col col-lg-2" id="querybox">
+
+
+        <div id="add-border">
+          <h5>Have a query? </h5>
+
+          <div class="form-group">
+
+            <label for="Email1"><strong>Email address</strong></label>
+            <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+            <label for="msg-box"><strong>Message</strong></label>
+            <textarea class="form-control" id="msg-box" rows="3"></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+
+        </div>
+      </div><!--QUERY-BOX END-->
+
+    </div><!--START ROW END-->
+
+
+  </div><!--End of Industries Sidebar CONTAINER-->
+</div>

@@ -1,0 +1,53 @@
+<form >
+  <div class="title" [hidden]="titlePart">
+  <div class="form-group">
+    <label for="title">Title Of the Report</label>
+    <input type="text" #title class="form-control" id="exampleFormControlInput1" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label for="categroy">Category</label>
+    <select class="form-control"  (change)='selectChangeHandler($event)' id="categroy">
+      <option (click)="selectCategory()"  *ngFor="let options of category" [value]="options">{{options}}</option>
+    </select>
+  </div>
+  <!-- <div class="form-group">
+    <label for="exampleFormControlSelect2">Example multiple select</label>
+    <select multiple class="form-control" id="exampleFormControlSelect2">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>5</option>
+      <option>4</option>
+    </select>
+  </div> -->
+  <button type="button" (click)="addCoin(title.value)" class="btn btn-primary">Add Report</button>
+</div>
+
+<div class="imgUrl" [hidden]="imgPart">
+
+<div class="form-group">
+<label for="exampleFormControlFile1">Add Img</label>
+<input type="file" class="form-control-file" accept=".png, .jpg, .jpeg" (change)="uploadFile($event , 1)" id="exampleFormControlFile1">
+<div>{{ uploadPercent | async }}</div>
+<!-- <a [href]="downloadURL | async">{{ downloadURL | async }}</a> -->
+</div>
+
+</div>
+
+<div class="pdfUrl" [hidden]="pdfPart">
+
+<div class="form-group">
+<label for="exampleFormControlFile2">Add PDF</label>
+<input type="file" class="form-control-file" accept=".pdf" (change)="uploadFile($event , 2)" id="exampleFormControlFile2">
+<!-- <div>{{ uploadPercent | async }}</div> -->
+<!-- <a [href]="downloadURL | async">{{ downloadURL | async }}</a> -->
+</div>
+
+</div>
+
+<div class="last" [hidden]="finalPart">
+  <h1>DONE</h1>
+  <button type="button" (click)="openPage(2)" class="btn btn-primary">Upload another file</button>
+  <button type="button"  routerLink="/" class="btn btn-primary">HOME</button>
+</div>
+</form>

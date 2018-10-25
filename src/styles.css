@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+A - GLOBAL STYLES
+B - HOME PAGE STYLES
+*/
+
+
+/* A- GLOBAL STYLES */
+/*ROOT VARIABLES*/
+:root {
+    --main-bg-color:#fff;
+    --main-txt-color: #042447; /*#042447  #003087  #587498 #2C8EBF*/
+    --main-gray-color: #EDEDED; /*#EDEDED #E8E7E5 #c7c7c7 #ccc #3B3B3B #D4D4D4*/
+    font-family: 'Work Sans',sans-serif;
+    overflow-x: hidden !important;
+}
+
+/* 01 - BODY STYLING */
+body {
+background-color:var(--main-bg-color) !important;
+user-select: none;
+margin:0;
+padding:0;
+}
+
+
+/* 02 - NAVIGATION BAR STYLING */
+
+
+/*Header Icons*/
+.owl-prev {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: -50px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+}
+
+.owl-next {
+    width: 15px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: -40px;
+    display: block!IMPORTANT;
+    border:0px solid black;
+}
+.owl-prev i, .owl-next i { color: #ccc;}
+
+
+.owl-nav {
+    font-size:6rem;
+    top:0px;
+    color: var(--main-txt-color);
+
+}

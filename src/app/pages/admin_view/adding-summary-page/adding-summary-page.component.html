@@ -1,0 +1,41 @@
+<!-- <form>
+  <div class="form-group">
+    <label for="Textarea1">Report summary</label>
+    <textarea #summary class="form-control" id="Textarea1" rows="25"></textarea>
+    <a class="btn btn-default" (click)="addContent(summary.value)">Add summary</a>
+  </div>
+</form>
+ -->
+
+<form>
+  <div class="form-group">
+    <label for="title">Title</label>
+    <input  [(ngModel)]="title" type="text" class="form-control" id="title" [ngModelOptions]="{standalone: true}" placeholder="title of the summary">
+  </div>
+  <p>{{title}}</p>
+
+      <div class="subheadingDiv pb-5" *ngFor="let sideHeading of sideHeadingArray;let k =index">
+
+      <div class="form-group" >
+        <label for="subHeading">Sub-Heading-{{k+1}}</label>
+        <input [(ngModel)]="sideHeadingArray[k].heading" [ngModelOptions]="{standalone: true}" type="text" class="form-control" id="subHeading" placeholder="">
+      </div>
+      <div class="form-group pl-5" *ngFor="let point of sideHeading.points;let i =index">
+        <label for="points{{i}}">Point-{{i+1}}</label>
+        <input [(ngModel)]="sideHeadingArray[k].points[i]" [ngModelOptions]="{standalone: true , updateOn: 'blur'}"  type="text" class="form-control" id="points{{i}}" placeholder="points">
+      </div>
+      <button class="btn btn-default  pl-5 " (click)="addContent('point' , k)">Add Point to Sub-heading-{{k+1}}</button>
+    </div>
+
+    <button class="btn btn-default" (click)="addContent('subheading' , null)">Add Sub-Heading</button>
+    <button class="btn btn-default" (click)="addContent('show' , null)">Show all</button>
+    <button class="btn btn-default" (click)="preview()">preview</button>
+    <div [innerHTML]="htmlCode">
+
+    </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</form>

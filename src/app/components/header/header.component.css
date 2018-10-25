@@ -1,0 +1,58 @@
+#header-icons {
+    background-color:var(--main-txt-color);
+    color:var(--main-bg-color);
+    font-size:1rem !important;
+    margin:0;
+    height:2rem;
+    line-height:2rem;
+}
+#header-icons a {
+   color:inherit;
+   margin-right:0.8rem;
+}
+
+#header-icons span {margin-right:2rem; }
+
+#header-icons a:hover {
+    transform: scale(1.2);
+}
+
+
+.navbar {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    /*margin-bottom: 0.8rem;*/
+    margin-top:0rem;
+    background-color: var(--main-gray-color) ! important;
+    z-index: 9999;
+    border: 0;
+    font-size: 0.8rem;
+    line-height: 1.42857143;
+    letter-spacing: 0.025rem;
+    padding:0.8rem 1.5rem !important;
+}
+
+
+/* company*/
+#company-logo { font-size: 1.2rem; font-weight:bold;}
+
+
+/*navigation bar contents styles */
+.navbar li a, .navbar .navbar-brand {
+    color: var(--main-txt-color) !important;
+    margin:0px 2px 0px 2px;
+    font-weight: bolder;
+}
+
+/*navigation bar href contents styles on hover */
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    background-color: var(--main-bg-color) !important ;
+    border-radius: 5%;
+    box-sizing: border-box;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #000 !important;
+}

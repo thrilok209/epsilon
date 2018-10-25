@@ -1,0 +1,129 @@
+/*C - Market Insights Home Page Styles(mi-Market Insights) */
+
+/*mi-background-image*/
+.mi-home-inner {
+    margin:0;
+    padding:0;
+    max-width:100%;
+    height:40vh;
+    background-color:var(--main-txt-color);
+    z-index:-1;
+    opacity:1;
+}
+
+/*mi-caption*/
+.mi-home-caption {
+margin-top: -28vh !important;
+color: var(--main-bg-color);
+padding:20px;
+max-width:100%;
+margin:auto;
+opacity:0.99;
+}
+
+/*mi-searchbox*/
+#mi-search-button {
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+    font-weight: bold;
+    border: solid 1px #000;
+}
+
+
+
+/*mi-industries*/
+#mi-home-industries {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    padding:3vh;
+    background-color: var(--main-bg-color);
+}
+
+
+#mi-home-industries h5 {
+    font-size:  0.9rem;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+
+/*MI HOME SIDE BAR*/
+
+#industries-sidebar
+{
+    padding:1.5rem;
+    color:var(--main-txt-color);
+    background-color:var(--main-gray-color);
+    margin-bottom:5vh;
+
+}
+
+#industries-sidebar h5 { font-size:1.25rem; font-weight:bold;}
+
+.sector .list-group-item {
+    color:inherit;
+    background-color: var(--main-bg-color);
+    font-weight:bold;
+     margin-left:-0.9rem !important;
+    width:110%;
+}
+
+.sector .sub-menu .list-group-item {
+    font-weight:normal;
+}
+
+.sector a .fa {
+    margin-left:1rem;
+    font-size:0.7rem;
+    line-height: 0.7rem;
+}
+
+
+
+ /*REPORTS GRID*/
+
+#reports-grid-title {
+    font-weight: bold;
+    font-size:1.5rem;
+    margin-bottom:5vh;
+
+}
+
+.report-col{
+    padding:10px;
+    background-color:var(--main-gray-color);
+}
+
+
+.report-col .card .card-title {
+    line-height: 0;
+    font-size:1.25rem;
+    font-weight:bold;
+}
+
+.muted {font-size:0.8rem;font-weight:;}
+
+
+
+.report-col .card-body .btn {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+}
+
+
+/*QUERY-BOX*/
+
+#add-border {
+    padding:1rem;
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+    border-radius: 1%;
+
+}
+
+#add-border h5 { font-size:1rem; font-weight:bold; }
+
+#querybox .btn {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}

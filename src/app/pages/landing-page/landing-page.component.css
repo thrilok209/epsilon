@@ -1,0 +1,210 @@
+
+.home-inner {
+    margin:0;
+    padding:0;
+    max-width:100%;
+    height:100vh;
+    background-image: url("/assets/images/banner-home%20-%20Copy_1.jpg");
+    /*background: 'url(../../../../assets/images/banner-home%20-%20Copy_1.jpg)';*/
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin:border-box;
+    z-index:-1;
+    opacity:1;
+}
+
+/*caption*/
+.caption {
+margin-top: -60vh !important;
+color: var(--main-txt-color);
+padding:20px;
+max-width:100%;
+margin:auto;
+opacity:0.99;
+}
+
+
+.caption h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+/*search-box styles*/
+#searchdiv {
+    position: relative;
+    margin-top: 0vh;
+}
+
+.input-group[input-type=text] {
+   width:1000px;
+}
+
+
+#search-button {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+}
+
+/*caption-under-searchbox*/
+.caption-under {
+margin-top: 0vh !important;
+color: var(--main-txt-color);
+padding:20px;
+max-width:100%;
+margin:auto;
+opacity:0.99;
+}
+
+.caption-under h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+
+/*INDUSTRIES TRACKED STYLES*/
+#industries {
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+    padding:3vh;
+    background-color: var(--main-bg-color);
+}
+
+#industries h3 {
+    font-size:1.5rem;
+    font-weight: bolder;
+    color: var(--main-txt-color);
+}
+
+
+
+#industries h5 {
+    font-size:  1.25rem;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+
+
+/*PRODUCT SLIDER STYLES*/
+
+#product-slider {
+    background-color: var(--main-gray-color);
+    max-width: 100%;
+    padding:1rem 4rem;
+    box-sizing: border-box;
+}
+
+#product-slider h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin:0.5rem auto;
+    color:var(--main-txt-color);
+}
+
+
+/*Product Card Styles*/
+#product-slider .card .card-title {
+    line-height: 0;
+    font-size:1.4rem;
+    font-weight: bold;
+}
+
+.muted {font-size:1rem;font-weight:bold;}
+
+#product-slider .btn {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+#product-slider .card-body .btn {
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+}
+
+
+/*WHY US SECTION STYLES*/
+#why-us {
+    margin: 5vh auto;
+    padding:3vh;
+    background-color: var(--main-bg-color);
+}
+
+#why-us h3 {
+    font-size:2rem;
+    font-weight: bolder;
+    color: var(--main-txt-color);
+}
+
+#why-us h5 {
+    font-size:  1.25rem;
+    font-weight: bold;
+    color: var(--main-txt-color);
+}
+
+
+/*BLOG POST SLIDER STYLES*/
+#blog-post-slider {
+    /*background-color:var(--main-txt-color);*/
+    margin-bottom: 3vh;
+    background-color: var(--main-gray-color);
+    max-width: 100%;
+    padding:1rem 4rem;
+    box-sizing: border-box;
+}
+
+#blog-post-slider h3 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin:0.5rem auto;
+    color:var(--main-txt-color);
+}
+
+
+/*Product Card Styles*/
+
+#blog-post-slider .card .card-title {
+    line-height: 1;
+    font-size:1.4rem;
+    font-weight: bold;
+}
+
+#blog-post-slider .btn {
+    background-color: var(--main-txt-color);
+    color: var(--main-bg-color);
+    font-weight: bold;
+}
+
+#blog-post-slider .card-body .btn {
+    background-color: var(--main-gray-color);
+    color: var(--main-txt-color);
+}
+
+/*FREE CONSULTATION STYLES*/
+#consult-sect {
+    color:var(--main-txt-color);
+    margin: 5vh auto;
+}
+
+#consult-sect h3 {font-size:1.5rem; font-weight:bolder;}
+
+#consult-sect p {font-size:1.2rem;}
+
+
+/*FREE CONSULTATION*/
+#msg-box {
+    height:8rem;
+}
+
+/*Place-holder*/
+
+#consult-sect .btn{
+    font-weight: bold;
+    color:var(--main-bg-color);
+    background-color:var(--main-txt-color);
+}
