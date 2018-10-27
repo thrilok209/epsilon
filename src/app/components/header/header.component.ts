@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  isCollapsed = false;
+  toggleCollapsed() {
+    this.isCollapsed = !this.isCollapsed;
+  }
   constructor() { }
 
   ngOnInit() {

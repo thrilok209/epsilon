@@ -15,6 +15,7 @@ import { UnderConstructionPageComponent } from './app/pages/under-construction-p
 
 
 export const routes: Routes = [
+  {path: '', redirectTo: 'Home' , pathMatch: 'full'},
   { path: 'create',
     component: AdminConsoleComponent
   },
@@ -42,7 +43,7 @@ export const routes: Routes = [
   { path: 'allreports',
     component: ReportsViewComponent
   },
-  { path: 'home',
+  { path: 'Home',
     component: LandingPageComponent
   },
   { path: 'methodology',
