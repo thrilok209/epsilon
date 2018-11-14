@@ -29,6 +29,9 @@ import { UnderConstructionPageComponent } from './pages/under-construction-page/
 import { MethodologyPageComponent } from './pages/methodology-page/methodology-page.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ReportSummaryComponent } from './pages/detail-report-view/report-summary/report-summary.component';
+
+
 
 
 @NgModule({
@@ -45,6 +48,7 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     MethodologyPageComponent,
     AboutPageComponent,
     ContactPageComponent,
+    ReportSummaryComponent
   ],
   imports: [
     BrowserModule,

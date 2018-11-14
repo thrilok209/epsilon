@@ -16,7 +16,7 @@ import { ActivatedRoute ,  Router , NavigationExtras} from '@angular/router';
 })
   export class AdminConsoleComponent implements OnInit {
     optionSelected: any;
-    category=["a","b","c","d"]
+    category=["a","b","c","d","e"]
     uploadPercent: Observable<number>;
     downloadURL: Observable<string>;
     submittedReportId:string;
