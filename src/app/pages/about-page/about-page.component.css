@@ -1,0 +1,60 @@
+
+/*#about-banner {
+  margin: 15vh auto;
+  padding: 5vh;
+}
+
+#about-banner h3 {
+font-size: 2rem;
+color: var(--main-txt-color);
+font-weight: bold;
+text-align: center;
+}*/
+
+
+#about-content {
+  margin: 30vh auto;
+  padding: 0 5vh;
+  font-size: 1rem;
+  color: var(--main-txt-color);
+}
+
+.btn {
+  color: var(--main-bg-color);
+  background-color: var(--main-txt-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.square {
+  height: 60px;
+  width: 60px;
+  margin: 10vh 5vh;
+  border: 1px dashed white;
+  background-color: var(--main-txt-color);
+  color: var(--main-bg-color);
+  display: inline-block;
+  transform: rotateZ(44deg);
+}
+
+.square:hover {
+  transform: scale(1.2);
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.square .icons {
+  position: absolute;
+  transform: rotateZ(-44deg);
+  margin: 20px 0 0px 21px;
+}
+
+.fa-facebook, .fa-twitter, .fa-linkedin {
+  width: 11px;
+  height: 22px;
+  color: var(--main-bg-color);
+  font-family: FontAwesome;
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

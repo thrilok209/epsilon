@@ -5,7 +5,7 @@
     max-width:100%;
     height:100vh;
     background-image: url("/assets/images/banner-home%20-%20Copy_1.jpg");
-    /*background: 'url(../../../../assets/images/banner-home%20-%20Copy_1.jpg)';*/
+    /*background: ('../../../../assets/images/banner-home%20-%20Copy_1.jpg');*/
     background-size:auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,7 +27,7 @@ opacity:0.99;
 
 
 .caption h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bolder;
 }
 
@@ -59,19 +59,16 @@ opacity:0.99;
 }
 
 .caption-under h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-
-
-
 /*INDUSTRIES TRACKED STYLES*/
 #industries {
-    margin-top: 30vh;
-    margin-bottom: 5vh;
-    padding:3vh;
-    background-color: var(--main-bg-color);
+    margin-top: 34vh;
+    margin-bottom: 0vh;
+    padding:8vh;
+    background-color: var(--main-gray-color);
 }
 
 #industries h3 {
@@ -129,19 +126,21 @@ opacity:0.99;
 
 
 /*WHY US SECTION STYLES*/
-#why-us {
-    margin: 5vh auto;
-    padding:3vh;
-    background-color: var(--main-bg-color);
+#what-we-do { background-color: var(--main-bg-color); }
+#why-us { background-color: var(--main-gray-color); }
+
+#why-us, #what-we-do {
+    margin: 0vh auto;
+    padding:8vh;
 }
 
-#why-us h3 {
+#why-us h3, #what-we-do h3 {
     font-size:2rem;
     font-weight: bolder;
     color: var(--main-txt-color);
 }
 
-#why-us h5 {
+#why-us h5, #what-we-do h5 {
     font-size:  1.25rem;
     font-weight: bold;
     color: var(--main-txt-color);
@@ -188,7 +187,10 @@ opacity:0.99;
 /*FREE CONSULTATION STYLES*/
 #consult-sect {
     color:var(--main-txt-color);
-    margin: 5vh auto;
+
+    margin: 0vh auto;
+    padding:8vh;
+    background-color: var(--main-bg-color);
 }
 
 #consult-sect h3 {font-size:1.5rem; font-weight:bolder;}
