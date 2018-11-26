@@ -1,12 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/database';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  iconPath:string="../../../../assets/images/icons"
+  // iconPath:string="../../../../assets/images"
+  iconPath:string="assets/images"
+msgsRef: AngularFireList<any>;
   public reportCarousel:any={
     loop:true,
     margin:10,
@@ -44,9 +47,18 @@ export class LandingPageComponent implements OnInit {
           {"title":"AI in Fintech","text":"Global Market Size, Share, Trends, Forecasts and Startup Profiles"} ,
           {"title":"AI in Fintech","text":"Global Market Size, Share, Trends, Forecasts and Startup Profiles"} ,
   ]
-  constructor() { }
+  constructor(db: AngularFireDatabase) {
+  this.msgsRef = db.list('messages'); }
 
   ngOnInit() {
   }
-
+  sendMsg(name , email , phone , msg){
+    if(name=="" || email=="" || phone=="" || msg==""){
+      alert("Enter your Details")
+    }
+    if(name!="" && email!="" && phone!="" && msg!=""){
+      this.msgsRef.push({'name':name, 'email':email, 'phone':"from landing page",'msg':msg})
+      alert("Your message has been submitted.")
+    }
+  }
 }

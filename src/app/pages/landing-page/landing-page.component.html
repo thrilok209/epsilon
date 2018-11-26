@@ -329,13 +329,13 @@
 
                              <div class="form-group">
                                 <label for="Name1"><strong>Name</strong></label>
-                                <input type="text" class="form-control" id="Name1" placeholder="">
+                                <input #name type="text" class="form-control" id="Name1" placeholder="">
                               </div>
 
 
                               <div class="form-group">
                                 <label for="Email1"><strong>Email address</strong></label>
-                                <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="">
+                                <input #email type="email" class="form-control" id="Email1" aria-describedby="emailHelp" placeholder="">
                                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                               </div>
 
@@ -346,7 +346,7 @@
 
                             <div class="form-group">
                                 <label for="msg-box"><strong>Message</strong></label>
-                                <textarea class="form-control" id="msg-box" rows="3"></textarea>
+                                <textarea #msg class="form-control" id="msg-box" rows="3"></textarea>
                             </div>
 
                  </div>
@@ -354,7 +354,7 @@
 
                 </div>
 
-                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                <button type="submit" (click)="sendMsg(name.value , email.value , 'from landing' , msg.value)" class="btn btn-primary">SEND MESSAGE</button>
       </form>
 
       <!--  </div>

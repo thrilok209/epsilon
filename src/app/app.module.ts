@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 
 import { RouterModule } from '@angular/router';
@@ -57,6 +59,8 @@ import { ReportSummaryComponent } from './pages/detail-report-view/report-summar
     AppBootstrapModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
      HttpClientModule,
      OwlModule,
      FormsModule

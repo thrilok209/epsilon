@@ -8,6 +8,10 @@
 .footer-icons ul li {
   display: inline-block;
 }
+.footer-logo h5 {
+  font-weight: bolder;
+  color: var(--main-txt-color);
+}
 
 .footer-icons ul li a {
   border: 1px solid var(--main-txt-color);
