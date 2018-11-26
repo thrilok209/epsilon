@@ -9,6 +9,11 @@ import { Observable } from 'rxjs';
 export class LandingPageComponent implements OnInit {
   // iconPath:string="../../../../assets/images"
   iconPath:string="assets/images"
+  btnMsg:string="SEND MESSAGE"
+  clearText1:string=""
+  clearText2:string=""
+  clearText3:string=""
+
 msgsRef: AngularFireList<any>;
   public reportCarousel:any={
     loop:true,
@@ -57,8 +62,12 @@ msgsRef: AngularFireList<any>;
       alert("Enter your Details")
     }
     if(name!="" && email!="" && phone!="" && msg!=""){
-      this.msgsRef.push({'name':name, 'email':email, 'phone':"from landing page",'msg':msg})
-      alert("Your message has been submitted.")
+      // this.msgsRef.push({'name':name, 'email':email, 'phone':"from landing page",'msg':msg})
+      // alert("Your message has been submitted.")
+      this.btnMsg="MESSAGE SENT"
+      this.clearText1=""
+      this.clearText2=""
+      this.clearText3=""
     }
   }
 }
