@@ -13,7 +13,7 @@ text-align: center;
 
 
 #about-content {
-  margin: 30vh auto;
+  margin: 20vh auto 15vh auto;;
   padding: 0 5vh;
   font-size: 1rem;
   color: var(--main-txt-color);
@@ -24,6 +24,7 @@ text-align: center;
   background-color: var(--main-txt-color);
   font-weight: bold;
   font-size: 1rem;
+  margin-bottom: 2em;
 }
 
 .square {
@@ -108,7 +109,7 @@ font-size: 14px;
 
 section {
     margin-top: 6em;
-    padding-top: 2.5em;
+    padding-top: 1.5em;
     width: 100%;
 }
 
@@ -196,9 +197,12 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
+.frontside .card {
     min-height: 370px;
+}
+
+.backside .card {
+    min-height: 380px;
 }
 
 .backside .card a {
@@ -215,6 +219,12 @@ section .section-title {
 }
 .frontside .card .card-text,
 .backside .card .card-text {
+  font-size: 18px;
+    color: black !important;
+}
+.frontside .card .sub-text,
+.backside .card .sub-text {
+  font-size: 14px;
     color: black !important;
 }
 
