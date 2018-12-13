@@ -1,5 +1,28 @@
-
 .home-inner {
+  margin:0;
+  padding:0;
+  max-width:100%;
+  height:35em;
+  background-image: url("/assets/images/banner-home%20-%20Copy_1.jpg");
+  /*background: ('../../../../assets/images/banner-home%20-%20Copy_1.jpg');*/
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-origin:border-box;
+  z-index:-1;
+  opacity:1;
+}
+.caption-under h3 {
+    padding-bottom: 1.4em;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 840px) {
+
+  .home-inner {
     margin:0;
     padding:0;
     max-width:100%;
@@ -13,6 +36,13 @@
     background-origin:border-box;
     z-index:-1;
     opacity:1;
+  }
+  .caption-under h3 {
+    padding-bottom: 8em;
+
+      font-size: 1.5rem;
+      font-weight: bold;
+  }
 }
 
 /*caption*/
@@ -52,20 +82,17 @@ opacity:0.99;
 .caption-under {
 margin-top: 0vh !important;
 color: var(--main-txt-color);
-padding:20px;
+padding: 20px 20px 0 20px;
 max-width:100%;
 margin:auto;
 opacity:0.99;
 }
 
-.caption-under h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+
 
 /*INDUSTRIES TRACKED STYLES*/
 #industries {
-    margin-top: 34vh;
+    margin-top: 3em;
     margin-bottom: 0vh;
     padding:8vh;
     background-color: var(--main-gray-color);

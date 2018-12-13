@@ -9,9 +9,11 @@ B - HOME PAGE STYLES
 :root {
     --main-bg-color:#fff;
     --main-txt-color: #042447; /*#042447  #003087  #587498 #2C8EBF*/
-    --main-gray-color: #EDEDED; /*#EDEDED #E8E7E5 #c7c7c7 #ccc #3B3B3B #D4D4D4*/
+    --main-gray-color: #EDEDED;
+    --main-gray-bolder-color: #D6D6D6; /*#EDEDED #E8E7E5 #c7c7c7 #ccc #3B3B3B #D4D4D4*/
     font-family: 'Work Sans',sans-serif;
     overflow-x: hidden !important;
+
 }
 
 /* 01 - BODY STYLING */

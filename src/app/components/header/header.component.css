@@ -23,7 +23,7 @@
     padding-bottom: 0.8rem;
     /*margin-bottom: 0.8rem;*/
     margin-top:0rem;
-    background-color: var(--main-gray-color) ! important;
+    background-color: var(--main-gray-bolder-color) ! important;
     z-index: 9999;
     border: 0;
     font-size: 0.8rem;
