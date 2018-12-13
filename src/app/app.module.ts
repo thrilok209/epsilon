@@ -55,7 +55,7 @@ import { ReportSummaryComponent } from './pages/detail-report-view/report-summar
   imports: [
     BrowserModule,
     RouterModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'}),
     AppBootstrapModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireStorageModule,
